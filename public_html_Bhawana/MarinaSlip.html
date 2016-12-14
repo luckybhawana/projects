@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTC XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> Alexamara Marina Slip </title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style = "background-color: Turquoise">
+<p align = "center"><b><font size = "6"> Alexamara Marina Slip </font></b></p>
+<br>
+
+<p>
+<img style = "margin-right:right; float: right;" alt ="Could not Find the Picture" src = "boatpic.jpg" width = "600" height = "200"/> 
+</p>
+<br>
+<br>
+
+<ul align = left>
+<li><a href = "http://acadweb1.salisbury.edu/~BG0935/Marina.html" target = "_self"> Marina_Page </a> </li> <hr>
+<li><a href = "http://acadweb1.salisbury.edu/~BG0935/Owner.html" target = "_self"> Owner_Page </a> </li> <hr>
+<li><a href = "http://acadweb1.salisbury.edu/~BG0935/MarinaSlip.html" target = "_self"> Marina_Slip </a> </li> <hr>
+<li><a href = "http://acadweb1.salisbury.edu/~BG0935/ServiceRequest.html" target = "_self"> Service_Request </a> </li> <hr>
+<li><a href = "http://acadweb1.salisbury.edu/~BG0935/ServiceCategory.html" target = "_self"> Service_Category </a> </li> <hr>
+<li><a href = "http://acadweb1.salisbury.edu/~BG0935/alexamara.html" target = "_blank"> BACK TO HOMEPAGE </a></li><hr>
+</ul>
+
+
+<p>
+<img style = "margin-left:left; float: left;" alt ="Could not Find the Picture" src = "underBoat.jpg" width = "600" height = "200"/> 
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class = "container">
+<ul class = "nav nav-pills">
+	<li><a data-toggle="pill" href="#InsertData">Insert Data</a></li>
+	<li><a data-toggle="pill" href="#EditData">Edit Data </a></li>
+	<li><a data-toggle="pill" href="#DeleteData">Delete Data </a></li>
+	<li><a data-toggle="pill" href="#ListAllItems">List All Items</a></li>
+</ul>
+
+<div class="tab-content">
+	<div id="InsertData" class= "tab-pane fade">
+		<br>
+		<br>
+		<p align = "center"><b> Enter the Marina Slip information </b></p>
+		<br><br>
+		
+		<form align = "center" action = "marinaSlipInsert.php" method = "POST">
+		
+		Please enter SLIP ID: <input type = "text" name = "slipID">
+		<br><br>
+		Please enter MARINA NUMBER: <input type = "text" name = "marinaNumber">
+		<br><br>
+		Please enter SLIP NUMBER: <input type = "text" name = "slipNumber">
+		<br><br>
+		Please enter LENGTH OF THE BOAT: <input type = "text" name = "boatLength">
+		<br><br>
+		Please enter RENTAL FEE FOR BOAT: <input type = "text" name = "boatRentalFee">
+		<br><br>
+		Please enter BOAT NAME: <input type = "text" name = "boatName">
+		<br><br>
+		Please enter BOAT TYPE: <input type = "text" name = "boatType">
+		<br><br><br>
+		Please enter OWNER NUMBER: <input type = "text" name = "ownerNumber">
+		<br><br><br>
+		<input type = "submit" value = "Submit">
+		
+		</form>
+		
+	</div>
+	
+	
+	<div id= "EditData" class = "tab-pane fade">
+		<br>
+		<br>
+		<p align = "center"><b> Enter the Owner Number to Edit the Owner Information </b></p>
+		<br><br>
+		
+		<form align = "center" action = "marinaSlipEdit.php" method = "POST">
+		
+		Please enter the SLIP ID: <input type = "text" name = "slipID">
+		<br><br>
+		<input type = "submit" value = "List Info for Marina Slip">
+		<br><br><br>
+		
+		</form>
+		
+	</div>
+	
+	
+	<div id = "DeleteData" class = "tab-pane fade">
+		<<br>
+		<br>
+		<p align = "center"><b> Enter the Slip Id You would like to Delete </b></p>
+		<br><br>
+		
+		<form align = "center" action = "marinaSlipDelete.php" method = "POST">
+		
+		Please enter the Slip ID: <input type = "text" name = "slipID">
+		<br><br>
+		<input type = "submit" value = "Click here to check the information your deleting">
+		
+		</form>
+	</div>
+	
+	<div id = "ListAllItems" class = "tab-pane fade">
+		<br>
+		<br>
+		<p align = "center"> <b> Click on the link below to see All information about Marina Slip in Alexamara</b></p>
+		
+		<form align = "center" action = "marinaSlipList.php" method = "POST">
+		
+		<input type = "submit" value = "List of Marina Slip in Alexamara Marina">
+		
+		</form>
+	</div>
+	
+</div>
+
+</div>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer align = "center">
+<p> Created by: Bhawana Gautam </P>
+<p> Contact Information : <a href = "mailto: bgautam1@gulls.salisbury.edu"> bgautam1@gulls.salisbury.edu</a> </p>
+</footer>
+
+</html>
